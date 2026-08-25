@@ -71,6 +71,14 @@ timestamped. Neither document carries an external registry timestamp. Anyone
 who discounts self-timestamped registrations should read the affected sections
 as exploratory.
 
+`results/v2/checkpoints` and `results/v4/checkpoints` hold the frozen reducer
+weights (about 1.3 MB) so Phase 2 can be rerun without repeating Phase 1. They
+are PyTorch state dictionaries; load them with `weights_only=True`.
+
+The `v2` and `v3_uncorrected` directories hold the 36 unweighted-BCE runs that
+document the collapse. They are superseded as results but are the evidence for
+Pitfall 1, so they ship.
+
 ## Not included
 
 The SBERT embedding cache (about 560 MB) is omitted because it regenerates from
