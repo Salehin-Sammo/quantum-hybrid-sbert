@@ -1,0 +1,57 @@
+[20:33:54] v7 E1 Fourier sweep starting (A|B|C parallel, 48 runs total)
+[20:34:17] done v7_paws_depthwise_mlp_fourierMLPh6_s0 rc=0
+[20:34:37] done v7_paws_depthwise_mlp_fourierMLPh6_s1 rc=0
+[20:35:03] done v7_paws_depthwise_mlp_fourierMLPh6_s2 rc=0
+[20:35:27] done v7_paws_depthwise_mlp_fourierMLPh6_s3 rc=0
+[20:35:49] done v7_paws_depthwise_mlp_fourierMLPh6_s4 rc=0
+[20:36:11] done v7_paws_depthwise_mlp_fourierMLPh6_s5 rc=0
+[20:36:30] done v7_paws_depthwise_mlp_fourierMLPh6_s6 rc=0
+[20:36:48] done v7_paws_depthwise_mlp_fourierMLPh6_s7 rc=0
+[20:37:23] done v7_qqp_depthwise_mlp_fourierMLPh6_s0 rc=0
+[20:37:54] done v7_qqp_depthwise_mlp_fourierMLPh6_s1 rc=0
+[20:38:25] done v7_qqp_depthwise_mlp_fourierMLPh6_s2 rc=0
+[20:38:49] done v7_qqp_depthwise_mlp_fourierMLPh6_s3 rc=0
+[20:39:21] done v7_qqp_depthwise_mlp_fourierMLPh6_s4 rc=0
+[20:39:50] done v7_qqp_depthwise_mlp_fourierMLPh6_s5 rc=0
+[20:40:06] done v7_paws_depthwise_pqc_fourierL1_s0 rc=0
+[20:40:19] done v7_qqp_depthwise_mlp_fourierMLPh6_s6 rc=0
+[20:40:47] done v7_qqp_depthwise_mlp_fourierMLPh6_s7 rc=0
+[20:40:47] BLOCK C (MLP h6) COMPLETE
+[20:46:57] done v7_paws_depthwise_pqc_fourierL1_s1 rc=0
+[20:49:23] done v7_paws_depthwise_pqc_fourierL4_s0 rc=0
+[20:56:15] done v7_paws_depthwise_pqc_fourierL1_s2 rc=0
+[21:01:50] done v7_paws_depthwise_pqc_fourierL1_s3 rc=0
+[21:08:02] done v7_paws_depthwise_pqc_fourierL1_s4 rc=0
+[21:10:16] done v7_paws_depthwise_pqc_fourierL4_s1 rc=0
+[21:13:51] done v7_paws_depthwise_pqc_fourierL1_s5 rc=0
+[21:17:47] done v7_paws_depthwise_pqc_fourierL1_s6 rc=0
+[21:24:09] done v7_paws_depthwise_pqc_fourierL1_s7 rc=0
+[21:25:52] done v7_paws_depthwise_pqc_fourierL4_s2 rc=0
+[21:50:20] done v7_paws_depthwise_pqc_fourierL4_s3 rc=0
+[21:52:00] done v7_qqp_depthwise_pqc_fourierL1_s0 rc=0
+[22:00:57] done v7_paws_depthwise_pqc_fourierL4_s4 rc=0
+[22:11:22] done v7_qqp_depthwise_pqc_fourierL1_s1 rc=0
+[22:14:44] done v7_paws_depthwise_pqc_fourierL4_s5 rc=0
+[22:31:57] done v7_paws_depthwise_pqc_fourierL4_s6 rc=0
+[22:36:49] done v7_qqp_depthwise_pqc_fourierL1_s2 rc=0
+[22:57:42] done v7_paws_depthwise_pqc_fourierL4_s7 rc=0
+[23:07:29] done v7_qqp_depthwise_pqc_fourierL1_s3 rc=0
+[23:25:54] done v7_qqp_depthwise_pqc_fourierL1_s4 rc=0
+[23:44:18] done v7_qqp_depthwise_pqc_fourierL1_s5 rc=0
+[23:57:59] done v7_qqp_depthwise_pqc_fourierL1_s6 rc=0
+[23:58:10] done v7_qqp_depthwise_pqc_fourierL4_s0 rc=0
+[00:18:39] done v7_qqp_depthwise_pqc_fourierL1_s7 rc=0
+[00:18:39] BLOCK A (PQC L1) COMPLETE
+[01:08:50] done v7_qqp_depthwise_pqc_fourierL4_s1 rc=0
+[03:50:42] done v7_qqp_depthwise_pqc_fourierL4_s2 rc=0
+[23:31:18] done v7_qqp_depthwise_pqc_fourierL4_s3 rc=0
+[01:19:50] done v7_qqp_depthwise_pqc_fourierL4_s4 rc=0
+[10:21:13] done v7_qqp_depthwise_pqc_fourierL4_s5 rc=0
+[16:13:38] done v7_qqp_depthwise_pqc_fourierL4_s6 rc=0
+[16:16:50] QQP L4 finish: seeds 3-7, 5-way parallel, patched trainer
+[16:48:33] done v7_qqp_depthwise_pqc_fourierL4_s5 rc=0
+[16:48:44] done v7_qqp_depthwise_pqc_fourierL4_s6 rc=0
+[17:19:23] done v7_qqp_depthwise_pqc_fourierL4_s7 rc=0
+[17:20:02] done v7_qqp_depthwise_pqc_fourierL4_s3 rc=0
+[17:23:05] done v7_qqp_depthwise_pqc_fourierL4_s4 rc=0
+[17:23:05] BLOCK B (PQC L4) COMPLETE

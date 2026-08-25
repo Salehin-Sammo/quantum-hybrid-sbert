@@ -1,0 +1,46 @@
+{
+  "prereg": "PREREGISTRATION_v7_mechanism.md SS E2",
+  "sel_uncalibrated": {
+    "n": 8,
+    "macro_f1_mean": 0.4739558377789249,
+    "macro_f1_std": 0.041746049936034015,
+    "pos_pred_rate_mean": 0.5204326923076923,
+    "pos_pred_rate_std": 0.036320016475599626
+  },
+  "sel_calibrated": {
+    "n": 8,
+    "macro_f1_mean": 0.48331867277270724,
+    "macro_f1_std": 0.06589756565350496,
+    "pos_pred_rate_mean": 0.546875,
+    "pos_pred_rate_std": 0.18405632355589668
+  },
+  "gap_mlp_minus_sel_uncalibrated": {
+    "delta": 0.06569901161919467,
+    "welch_t": -3.548988593964811,
+    "welch_p": 0.003547638497399443,
+    "bootstrap_ci95": [
+      0.03153441293510416,
+      0.09929443295657345
+    ]
+  },
+  "gap_mlp_minus_sel_calibrated": {
+    "delta": 0.053450819022527796,
+    "welch_t": -2.157028098813021,
+    "welch_p": 0.06000880874431666,
+    "bootstrap_ci95": [
+      0.00934828443458439,
+      0.09778950477215125
+    ]
+  },
+  "sel_uncal_to_cal_shift": {
+    "delta_macro_f1": 0.00936283499378232,
+    "welch_p_macro_f1": 0.7401943463632286,
+    "delta_pos_pred_rate": 0.02644230769230771,
+    "welch_p_pos_pred_rate": 0.701190551959482
+  },
+  "p2_check": {
+    "pathology_present_uncalibrated": false,
+    "calibration_normalizes": false,
+    "verdict": "P2-null"
+  }
+}

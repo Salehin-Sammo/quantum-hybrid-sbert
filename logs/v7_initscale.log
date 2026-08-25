@@ -1,0 +1,20 @@
+[20:38:37] v7 E4 init-scale sweep starting (16 runs, 2 blocks)
+[20:40:53] done v7_mrpc_pqc_init1p0_uncal_s0 rc=0
+[20:44:16] done v7_mrpc_pqc_init1p0_uncal_s1 rc=0
+[20:46:14] done v7_mrpc_pqc_init1p0_uncal_s2 rc=0
+[20:48:38] done v7_mrpc_pqc_init1p0_uncal_s3 rc=0
+[20:49:05] done v7_paws_pqc_init1p0_uncal_s0 rc=0
+[20:50:47] done v7_mrpc_pqc_init1p0_uncal_s4 rc=0
+[20:52:40] done v7_mrpc_pqc_init1p0_uncal_s5 rc=0
+[20:54:14] done v7_paws_pqc_init1p0_uncal_s1 rc=0
+[20:54:34] done v7_mrpc_pqc_init1p0_uncal_s6 rc=0
+[20:58:26] done v7_mrpc_pqc_init1p0_uncal_s7 rc=0
+[20:58:26] MRPC BLOCK COMPLETE
+[20:59:38] done v7_paws_pqc_init1p0_uncal_s2 rc=0
+[21:12:16] done v7_paws_pqc_init1p0_uncal_s3 rc=0
+[21:17:06] done v7_paws_pqc_init1p0_uncal_s4 rc=0
+[21:39:28] done v7_paws_pqc_init1p0_uncal_s5 rc=0
+[21:45:48] done v7_paws_pqc_init1p0_uncal_s6 rc=0
+[21:52:11] done v7_paws_pqc_init1p0_uncal_s7 rc=0
+[21:52:11] PAWS BLOCK COMPLETE
+[21:52:11] E4 ALL BLOCKS COMPLETE

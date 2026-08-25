@@ -1,0 +1,101 @@
+[00:24:22] v4 sweep starting (class-weighted BCE)
+[00:24:22] start mrpc_depthwise_pqc_s0
+[00:27:40] finish mrpc_depthwise_pqc_s0 rc=0
+[00:27:40] start mrpc_depthwise_pqc_s1
+[00:33:05] finish mrpc_depthwise_pqc_s1 rc=0
+[00:33:05] start mrpc_depthwise_pqc_s2
+[00:38:26] finish mrpc_depthwise_pqc_s2 rc=0
+[00:38:26] start mrpc_depthwise_pqc_s3
+[00:41:56] finish mrpc_depthwise_pqc_s3 rc=0
+[00:41:56] start mrpc_depthwise_pqc_s4
+[00:46:42] finish mrpc_depthwise_pqc_s4 rc=0
+[00:46:42] start mrpc_depthwise_pqc_s5
+[00:49:24] finish mrpc_depthwise_pqc_s5 rc=0
+[00:49:24] start mrpc_depthwise_pqc_s6
+[00:53:05] finish mrpc_depthwise_pqc_s6 rc=0
+[00:53:05] start mrpc_depthwise_pqc_s7
+[00:57:24] finish mrpc_depthwise_pqc_s7 rc=0
+[00:57:24] start mrpc_depthwise_mlp_s0
+[00:57:40] finish mrpc_depthwise_mlp_s0 rc=0
+[00:57:40] start mrpc_depthwise_mlp_s1
+[00:57:54] finish mrpc_depthwise_mlp_s1 rc=0
+[00:57:54] start mrpc_depthwise_mlp_s2
+[00:58:08] finish mrpc_depthwise_mlp_s2 rc=0
+[00:58:08] start mrpc_depthwise_mlp_s3
+[00:58:22] finish mrpc_depthwise_mlp_s3 rc=0
+[00:58:22] start mrpc_depthwise_mlp_s4
+[00:58:36] finish mrpc_depthwise_mlp_s4 rc=0
+[00:58:36] start mrpc_depthwise_mlp_s5
+[00:58:50] finish mrpc_depthwise_mlp_s5 rc=0
+[00:58:50] start mrpc_depthwise_mlp_s6
+[00:59:04] finish mrpc_depthwise_mlp_s6 rc=0
+[00:59:04] start mrpc_depthwise_mlp_s7
+[00:59:18] finish mrpc_depthwise_mlp_s7 rc=0
+[00:59:18] start mrpc_linear_pqc_s0
+[01:03:48] finish mrpc_linear_pqc_s0 rc=0
+[01:03:48] start mrpc_linear_pqc_s1
+[01:07:41] finish mrpc_linear_pqc_s1 rc=0
+[01:07:41] start mrpc_linear_pqc_s2
+[01:11:38] finish mrpc_linear_pqc_s2 rc=0
+[01:11:38] start mrpc_linear_pqc_s3
+[01:16:56] finish mrpc_linear_pqc_s3 rc=0
+[01:16:56] start mrpc_linear_pqc_s4
+[01:21:38] finish mrpc_linear_pqc_s4 rc=0
+[01:21:38] start mrpc_linear_pqc_s5
+[01:25:48] finish mrpc_linear_pqc_s5 rc=0
+[01:25:48] start mrpc_linear_pqc_s6
+[01:31:05] finish mrpc_linear_pqc_s6 rc=0
+[01:31:05] start mrpc_linear_pqc_s7
+[01:34:58] finish mrpc_linear_pqc_s7 rc=0
+[01:34:58] start mrpc_linear_mlp_s0
+[01:35:12] finish mrpc_linear_mlp_s0 rc=0
+[01:35:12] start mrpc_linear_mlp_s1
+[01:35:26] finish mrpc_linear_mlp_s1 rc=0
+[01:35:26] start mrpc_linear_mlp_s2
+[01:35:39] finish mrpc_linear_mlp_s2 rc=0
+[01:35:39] start mrpc_linear_mlp_s3
+[01:35:53] finish mrpc_linear_mlp_s3 rc=0
+[01:35:53] start mrpc_linear_mlp_s4
+[01:36:06] finish mrpc_linear_mlp_s4 rc=0
+[01:36:06] start mrpc_linear_mlp_s5
+[01:36:20] finish mrpc_linear_mlp_s5 rc=0
+[01:36:20] start mrpc_linear_mlp_s6
+[01:36:33] finish mrpc_linear_mlp_s6 rc=0
+[01:36:33] start mrpc_linear_mlp_s7
+[01:36:47] finish mrpc_linear_mlp_s7 rc=0
+[01:36:47] start paws_depthwise_pqc_s0
+[01:50:31] finish paws_depthwise_pqc_s0 rc=0
+[01:50:31] start paws_depthwise_pqc_s1
+[02:04:28] finish paws_depthwise_pqc_s1 rc=0
+[02:04:28] start paws_depthwise_pqc_s2
+[02:16:46] finish paws_depthwise_pqc_s2 rc=0
+[02:16:46] start paws_depthwise_pqc_s3
+[02:26:51] finish paws_depthwise_pqc_s3 rc=0
+[02:26:51] start paws_depthwise_pqc_s4
+[02:34:46] finish paws_depthwise_pqc_s4 rc=0
+[02:34:46] start paws_depthwise_pqc_s5
+[02:47:06] finish paws_depthwise_pqc_s5 rc=0
+[02:47:06] start paws_depthwise_pqc_s6
+[03:01:42] finish paws_depthwise_pqc_s6 rc=0
+[03:01:42] start paws_depthwise_pqc_s7
+[04:31:10] finish paws_depthwise_pqc_s7 rc=0
+[04:31:10] start paws_depthwise_mlp_s0
+[04:31:25] finish paws_depthwise_mlp_s0 rc=0
+[04:31:25] start paws_depthwise_mlp_s1
+[04:47:50] finish paws_depthwise_mlp_s1 rc=0
+[04:47:50] start paws_depthwise_mlp_s2
+[04:48:04] finish paws_depthwise_mlp_s2 rc=0
+[04:48:04] start paws_depthwise_mlp_s3
+[04:48:17] finish paws_depthwise_mlp_s3 rc=0
+[04:48:17] start paws_depthwise_mlp_s4
+[05:04:25] finish paws_depthwise_mlp_s4 rc=0
+[05:04:25] start paws_depthwise_mlp_s5
+[05:04:40] finish paws_depthwise_mlp_s5 rc=0
+[05:04:40] start paws_depthwise_mlp_s6
+[05:04:54] finish paws_depthwise_mlp_s6 rc=0
+[05:04:54] start paws_depthwise_mlp_s7
+[05:06:36] finish paws_depthwise_mlp_s7 rc=0
+[05:06:36] start paws_linear_pqc_s0
+[07:51:21] finish paws_linear_pqc_s0 rc=0
+[07:51:21] start paws_linear_pqc_s1
+[07:54:49] killed PAWS linear sweep (per-seed too slow, ~3hr each); finalize with 49 runs

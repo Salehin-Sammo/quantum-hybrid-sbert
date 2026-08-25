@@ -1,0 +1,248 @@
+
+=== seed 0 (0s elapsed) ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (11.3s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.678  pos_weight=0.4760
+  [phase1] ep   0: loss=0.4476  val_macroF1=0.4072  val_balAcc=0.5033  val_pp=0.990
+  [phase1] ep   5: loss=0.4338  val_macroF1=0.4956  val_balAcc=0.4989  val_pp=0.570
+  [phase1] ep  10: loss=0.4234  val_macroF1=0.5649  val_balAcc=0.5692  val_pp=0.590
+  [phase1] ep  15: loss=0.4187  val_macroF1=0.5409  val_balAcc=0.5522  val_pp=0.525
+  [phase1] early stop ep 16  best_val_macroF1=0.5649
+  Phase 1 done: best_val_f1=0.5649  (13.0s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.678  pos_weight=0.4760
+  [phase2] ep   0: loss=0.5000  val_macroF1=0.3939  test_macroF1=0.4174  test_f1=0.8347  test_acc=0.7163
+  [phase2] ep   5: loss=0.4460  val_macroF1=0.5535  test_macroF1=0.4930  test_f1=0.6807  test_acc=0.5625
+  [phase2] ep  10: loss=0.4389  val_macroF1=0.5919  test_macroF1=0.4895  test_f1=0.6761  test_acc=0.5577
+  [phase2] ep  15: loss=0.4360  val_macroF1=0.5564  test_macroF1=0.4936  test_f1=0.6738  test_acc=0.5577
+  [phase2] early stop ep 16  best_val_macroF1=0.5919
+  Phase 2 done: best_val_macro_f1=0.5919  test_macro_f1=0.4895  (234.1s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=0  p=0.0     macro_f1=0.4895  pos_pred_rate=0.6490  (17s elapsed)
+    seed=0  p=0.001   macro_f1=0.4861  pos_pred_rate=0.6442  (35s elapsed)
+    seed=0  p=0.005   macro_f1=0.4756  pos_pred_rate=0.6298  (53s elapsed)
+    seed=0  p=0.01    macro_f1=0.4761  pos_pred_rate=0.6010  (71s elapsed)
+    seed=0  p=0.05    macro_f1=0.3299  pos_pred_rate=0.2308  (89s elapsed)
+    seed=0  p=0.1     macro_f1=0.2210  pos_pred_rate=0.0000  (108s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.4895 vs default.qubit=0.4895  diff=0.0000  -> PASS
+[seed 0] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 1 (342s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (10.9s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.672  pos_weight=0.4892
+  [phase1] ep   0: loss=0.4539  val_macroF1=0.4958  val_balAcc=0.5153  val_pp=0.505
+  [phase1] ep   5: loss=0.4353  val_macroF1=0.5053  val_balAcc=0.5165  val_pp=0.555
+  [phase1] early stop ep 9  best_val_macroF1=0.5328
+  Phase 1 done: best_val_f1=0.5328  (11.8s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.672  pos_weight=0.4892
+  [phase2] ep   0: loss=0.5095  val_macroF1=0.4083  test_macroF1=0.4040  test_f1=0.8080  test_acc=0.6779
+  [phase2] ep   5: loss=0.4557  val_macroF1=0.5634  test_macroF1=0.5116  test_f1=0.6360  test_acc=0.5433
+  [phase2] ep  10: loss=0.4540  val_macroF1=0.5171  test_macroF1=0.5229  test_f1=0.6215  test_acc=0.5433
+  [phase2] early stop ep 11  best_val_macroF1=0.5634
+  Phase 2 done: best_val_macro_f1=0.5634  test_macro_f1=0.5116  (189.8s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=1  p=0.0     macro_f1=0.5116  pos_pred_rate=0.5769  (26s elapsed)
+    seed=1  p=0.001   macro_f1=0.5116  pos_pred_rate=0.5769  (50s elapsed)
+    seed=1  p=0.005   macro_f1=0.4984  pos_pred_rate=0.5481  (76s elapsed)
+    seed=1  p=0.01    macro_f1=0.5207  pos_pred_rate=0.5144  (97s elapsed)
+    seed=1  p=0.05    macro_f1=0.2918  pos_pred_rate=0.0577  (119s elapsed)
+    seed=1  p=0.1     macro_f1=0.2436  pos_pred_rate=0.0000  (140s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.5116 vs default.qubit=0.5116  diff=0.0000  -> PASS
+[seed 1] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 2 (672s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (7.7s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.660  pos_weight=0.5140
+  [phase1] ep   0: loss=0.4694  val_macroF1=0.5478  val_balAcc=0.5831  val_pp=0.490
+  [phase1] ep   5: loss=0.4473  val_macroF1=0.5726  val_balAcc=0.5840  val_pp=0.610
+  [phase1] early stop ep 10  best_val_macroF1=0.5960
+  Phase 1 done: best_val_f1=0.5960  (8.8s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.660  pos_weight=0.5140
+  [phase2] ep   0: loss=0.5226  val_macroF1=0.4135  test_macroF1=0.3988  test_f1=0.7977  test_acc=0.6635
+  [phase2] ep   5: loss=0.4588  val_macroF1=0.5423  test_macroF1=0.5332  test_f1=0.7172  test_acc=0.6058
+  [phase2] ep  10: loss=0.4566  val_macroF1=0.5438  test_macroF1=0.5303  test_f1=0.6929  test_acc=0.5865
+  [phase2] early stop ep 14  best_val_macroF1=0.5552
+  Phase 2 done: best_val_macro_f1=0.5552  test_macro_f1=0.5413  (240.1s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=2  p=0.0     macro_f1=0.5413  pos_pred_rate=0.6971  (19s elapsed)
+    seed=2  p=0.001   macro_f1=0.5376  pos_pred_rate=0.6923  (38s elapsed)
+    seed=2  p=0.005   macro_f1=0.5339  pos_pred_rate=0.6875  (57s elapsed)
+    seed=2  p=0.01    macro_f1=0.5192  pos_pred_rate=0.6683  (76s elapsed)
+    seed=2  p=0.05    macro_f1=0.4591  pos_pred_rate=0.4038  (96s elapsed)
+    seed=2  p=0.1     macro_f1=0.2518  pos_pred_rate=0.0000  (116s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.5413 vs default.qubit=0.5413  diff=0.0000  -> PASS
+[seed 2] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 3 (1028s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (7.1s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.683  pos_weight=0.4652
+  [phase1] ep   0: loss=0.4403  val_macroF1=0.4728  val_balAcc=0.4823  val_pp=0.530
+  [phase1] ep   5: loss=0.4208  val_macroF1=0.5495  val_balAcc=0.5573  val_pp=0.585
+  [phase1] ep  10: loss=0.4137  val_macroF1=0.5196  val_balAcc=0.5225  val_pp=0.615
+  [phase1] early stop ep 11  best_val_macroF1=0.5495
+  Phase 1 done: best_val_f1=0.5495  (8.1s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.683  pos_weight=0.4652
+  [phase2] ep   0: loss=0.4839  val_macroF1=0.4030  test_macroF1=0.4091  test_f1=0.8182  test_acc=0.6923
+  [phase2] ep   5: loss=0.4349  val_macroF1=0.5424  test_macroF1=0.5226  test_f1=0.6764  test_acc=0.5721
+  [phase2] ep  10: loss=0.4320  val_macroF1=0.5347  test_macroF1=0.5114  test_f1=0.6618  test_acc=0.5577
+  [phase2] ep  15: loss=0.4286  val_macroF1=0.5504  test_macroF1=0.4760  test_f1=0.6347  test_acc=0.5240
+  [phase2] early stop ep 20  best_val_macroF1=0.5575
+  Phase 2 done: best_val_macro_f1=0.5575  test_macro_f1=0.4760  (307.0s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=3  p=0.0     macro_f1=0.4760  pos_pred_rate=0.6106  (19s elapsed)
+    seed=3  p=0.001   macro_f1=0.4723  pos_pred_rate=0.6058  (38s elapsed)
+    seed=3  p=0.005   macro_f1=0.4719  pos_pred_rate=0.5913  (57s elapsed)
+    seed=3  p=0.01    macro_f1=0.4750  pos_pred_rate=0.5817  (76s elapsed)
+    seed=3  p=0.05    macro_f1=0.4090  pos_pred_rate=0.2212  (95s elapsed)
+    seed=3  p=0.1     macro_f1=0.2353  pos_pred_rate=0.0000  (114s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.4760 vs default.qubit=0.4760  diff=0.0000  -> PASS
+[seed 3] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 4 (1450s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (7.2s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.675  pos_weight=0.4815
+  [phase1] ep   0: loss=0.4520  val_macroF1=0.2814  val_balAcc=0.4666  val_pp=0.075
+  [phase1] ep   5: loss=0.4325  val_macroF1=0.5572  val_balAcc=0.5767  val_pp=0.505
+  [phase1] ep  10: loss=0.4242  val_macroF1=0.5882  val_balAcc=0.5994  val_pp=0.565
+  [phase1] early stop ep 13  best_val_macroF1=0.5904
+  Phase 1 done: best_val_f1=0.5904  (8.3s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.675  pos_weight=0.4815
+  [phase2] ep   0: loss=0.5007  val_macroF1=0.3994  test_macroF1=0.4124  test_f1=0.8249  test_acc=0.7019
+  [phase2] ep   5: loss=0.4446  val_macroF1=0.5395  test_macroF1=0.5761  test_f1=0.7738  test_acc=0.6683
+  [phase2] early stop ep 10  best_val_macroF1=0.5423
+  Phase 2 done: best_val_macro_f1=0.5423  test_macro_f1=0.5677  (167.9s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=4  p=0.0     macro_f1=0.5677  pos_pred_rate=0.8029  (20s elapsed)
+    seed=4  p=0.001   macro_f1=0.5677  pos_pred_rate=0.8029  (41s elapsed)
+    seed=4  p=0.005   macro_f1=0.5498  pos_pred_rate=0.7788  (62s elapsed)
+    seed=4  p=0.01    macro_f1=0.5650  pos_pred_rate=0.7500  (82s elapsed)
+    seed=4  p=0.05    macro_f1=0.3944  pos_pred_rate=0.1731  (101s elapsed)
+    seed=4  p=0.1     macro_f1=0.2296  pos_pred_rate=0.0000  (121s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.5677 vs default.qubit=0.5677  diff=0.0000  -> PASS
+[seed 4] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 5 (1738s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (6.9s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.664  pos_weight=0.5060
+  [phase1] ep   0: loss=0.4676  val_macroF1=0.3740  val_balAcc=0.5204  val_pp=0.155
+  [phase1] ep   5: loss=0.4454  val_macroF1=0.5345  val_balAcc=0.5397  val_pp=0.610
+  [phase1] early stop ep 10  best_val_macroF1=0.5413
+  Phase 1 done: best_val_f1=0.5413  (7.8s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.664  pos_weight=0.5060
+  [phase2] ep   0: loss=0.5044  val_macroF1=0.4065  test_macroF1=0.4057  test_f1=0.8114  test_acc=0.6827
+  [phase2] ep   5: loss=0.4546  val_macroF1=0.5097  test_macroF1=0.5210  test_f1=0.7167  test_acc=0.6010
+  [phase2] ep  10: loss=0.4495  val_macroF1=0.5504  test_macroF1=0.5228  test_f1=0.6972  test_acc=0.5865
+  [phase2] early stop ep 15  best_val_macroF1=0.5623
+  Phase 2 done: best_val_macro_f1=0.5623  test_macro_f1=0.5260  (236.5s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=5  p=0.0     macro_f1=0.5260  pos_pred_rate=0.7019  (18s elapsed)
+    seed=5  p=0.001   macro_f1=0.5225  pos_pred_rate=0.6971  (37s elapsed)
+    seed=5  p=0.005   macro_f1=0.5153  pos_pred_rate=0.6875  (55s elapsed)
+    seed=5  p=0.01    macro_f1=0.5193  pos_pred_rate=0.6635  (73s elapsed)
+    seed=5  p=0.05    macro_f1=0.4790  pos_pred_rate=0.3750  (92s elapsed)
+    seed=5  p=0.1     macro_f1=0.2409  pos_pred_rate=0.0000  (110s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.5260 vs default.qubit=0.5260  diff=0.0000  -> PASS
+[seed 5] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 6 (2085s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (7.4s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.679  pos_weight=0.4717
+  [phase1] ep   0: loss=0.4439  val_macroF1=0.5147  val_balAcc=0.5687  val_pp=0.360
+  [phase1] ep   5: loss=0.4254  val_macroF1=0.5690  val_balAcc=0.5916  val_pp=0.495
+  [phase1] early stop ep 7  best_val_macroF1=0.5775
+  Phase 1 done: best_val_f1=0.5775  (8.0s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.679  pos_weight=0.4717
+  [phase2] ep   0: loss=0.4960  val_macroF1=0.3994  test_macroF1=0.4124  test_f1=0.8249  test_acc=0.7019
+  [phase2] ep   5: loss=0.4448  val_macroF1=0.5575  test_macroF1=0.4756  test_f1=0.6269  test_acc=0.5192
+  [phase2] ep  10: loss=0.4430  val_macroF1=0.5347  test_macroF1=0.5204  test_f1=0.6541  test_acc=0.5577
+  [phase2] early stop ep 11  best_val_macroF1=0.5575
+  Phase 2 done: best_val_macro_f1=0.5575  test_macro_f1=0.4756  (172.6s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=6  p=0.0     macro_f1=0.4756  pos_pred_rate=0.5865  (18s elapsed)
+    seed=6  p=0.001   macro_f1=0.4756  pos_pred_rate=0.5865  (36s elapsed)
+    seed=6  p=0.005   macro_f1=0.5000  pos_pred_rate=0.5385  (55s elapsed)
+    seed=6  p=0.01    macro_f1=0.5067  pos_pred_rate=0.4856  (73s elapsed)
+    seed=6  p=0.05    macro_f1=0.3320  pos_pred_rate=0.0913  (92s elapsed)
+    seed=6  p=0.1     macro_f1=0.2296  pos_pred_rate=0.0000  (111s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.4756 vs default.qubit=0.4756  diff=0.0000  -> PASS
+[seed 6] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+=== seed 7 (2368s elapsed) ===
+  data -- train: 2000  val: 200  test: 208
+  SBERT encode done (7.2s)
+  reducer params=197
+  --- Phase 1: reducer pretraining with linear probe (BCE) ---
+  [phase1] probe params: 321 (2-layer MLP, hidden=32)
+  [phase1] pos_frac=0.670  pos_weight=0.4925
+  [phase1] ep   0: loss=0.4584  val_macroF1=0.4615  val_balAcc=0.4635  val_pp=0.605
+  [phase1] ep   5: loss=0.4380  val_macroF1=0.4978  val_balAcc=0.5035  val_pp=0.595
+  [phase1] early stop ep 10  best_val_macroF1=0.5048
+  Phase 1 done: best_val_f1=0.5048  (8.0s)
+  frozen features: tr=(2000, 8) val=(200, 8) te=(208, 8)
+  head params=34 (base 32 + 2 calib)
+  --- Phase 2: frozen reducer + PQC head (BCE) ---
+  [phase2] pos_frac=0.670  pos_weight=0.4925
+  [phase2] ep   0: loss=0.5076  val_macroF1=0.4100  test_macroF1=0.4023  test_f1=0.8046  test_acc=0.6731
+  [phase2] ep   5: loss=0.4524  val_macroF1=0.5213  test_macroF1=0.5835  test_f1=0.6897  test_acc=0.6106
+  [phase2] ep  10: loss=0.4494  val_macroF1=0.4970  test_macroF1=0.6048  test_f1=0.6827  test_acc=0.6202
+  [phase2] early stop ep 12  best_val_macroF1=0.5287
+  Phase 2 done: best_val_macro_f1=0.5287  test_macro_f1=0.5918  (183.1s)
+  --- noise sweep on default.mixed (n_test=208) ---
+    seed=7  p=0.0     macro_f1=0.5918  pos_pred_rate=0.5673  (18s elapsed)
+    seed=7  p=0.001   macro_f1=0.5918  pos_pred_rate=0.5673  (37s elapsed)
+    seed=7  p=0.005   macro_f1=0.5873  pos_pred_rate=0.5385  (55s elapsed)
+    seed=7  p=0.01    macro_f1=0.5681  pos_pred_rate=0.5048  (73s elapsed)
+    seed=7  p=0.05    macro_f1=0.4290  pos_pred_rate=0.1490  (92s elapsed)
+    seed=7  p=0.1     macro_f1=0.2464  pos_pred_rate=0.0000  (109s elapsed)
+  sanity: default.mixed p=0 macro_f1=0.5918 vs default.qubit=0.5918  diff=0.0000  -> PASS
+[seed 7] saved -> /Users/sammo/Downloads/Research/quantum_hybrid_sbert/results/noise_proxy_v7_multiseed.json
+
+[done] all seeds processed (2661s total)

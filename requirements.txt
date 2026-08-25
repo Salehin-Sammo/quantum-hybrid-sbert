@@ -1,0 +1,31 @@
+# Quantum Hybrid SBERT — pinned dependencies (mirrors quantum_native_embeddings)
+# Python 3.13 venv tested on Apple M3 Max
+
+# Core scientific
+numpy>=1.26
+scipy>=1.13
+scikit-learn>=1.4
+
+# Quantum simulation
+pennylane==0.44.1
+
+# PyTorch (for reducer + head training)
+torch>=2.11
+
+# NLP / SBERT
+sentence-transformers>=5.4
+transformers>=5.7
+tokenizers>=0.22
+datasets>=2.14
+huggingface-hub>=0.20
+
+# Plotting (for figures)
+matplotlib>=3.10
+
+# Statistics
+pypdf>=4.0   # for verifying compiled PDFs in CI
+
+# Optional: real quantum hardware
+qiskit>=2.4
+qiskit-aer>=0.17
+qiskit-ibm-runtime>=0.40

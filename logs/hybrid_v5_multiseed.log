@@ -1,0 +1,131 @@
+[18:48:20] v5 calibration-lever sweep starting
+[18:48:20] depthwise (headline) first, then linear (control)
+[18:48:20] start depthwise_mrpc_pqc_s0
+[18:52:15] finish depthwise_mrpc_pqc_s0 rc=0
+[18:52:15] start depthwise_mrpc_pqc_s1
+[18:55:14] finish depthwise_mrpc_pqc_s1 rc=0
+[18:55:14] start depthwise_mrpc_pqc_s2
+[18:58:41] finish depthwise_mrpc_pqc_s2 rc=0
+[18:58:41] start depthwise_mrpc_pqc_s3
+[19:03:26] finish depthwise_mrpc_pqc_s3 rc=0
+[19:03:26] start depthwise_mrpc_pqc_s4
+[19:06:02] finish depthwise_mrpc_pqc_s4 rc=0
+[19:06:02] start depthwise_mrpc_pqc_s5
+[19:09:42] finish depthwise_mrpc_pqc_s5 rc=0
+[19:09:42] start depthwise_mrpc_pqc_s6
+[19:12:30] finish depthwise_mrpc_pqc_s6 rc=0
+[19:12:30] start depthwise_mrpc_pqc_s7
+[19:15:29] finish depthwise_mrpc_pqc_s7 rc=0
+[19:15:29] start depthwise_mrpc_mlp_s0
+[19:15:45] finish depthwise_mrpc_mlp_s0 rc=0
+[19:15:45] start depthwise_mrpc_mlp_s1
+[19:15:59] finish depthwise_mrpc_mlp_s1 rc=0
+[19:15:59] start depthwise_mrpc_mlp_s2
+[19:16:12] finish depthwise_mrpc_mlp_s2 rc=0
+[19:16:12] start depthwise_mrpc_mlp_s3
+[19:16:26] finish depthwise_mrpc_mlp_s3 rc=0
+[19:16:26] start depthwise_mrpc_mlp_s4
+[19:16:42] finish depthwise_mrpc_mlp_s4 rc=0
+[19:16:42] start depthwise_mrpc_mlp_s5
+[19:16:56] finish depthwise_mrpc_mlp_s5 rc=0
+[19:16:56] start depthwise_mrpc_mlp_s6
+[19:17:10] finish depthwise_mrpc_mlp_s6 rc=0
+[19:17:10] start depthwise_mrpc_mlp_s7
+[19:17:24] finish depthwise_mrpc_mlp_s7 rc=0
+[19:17:24] start depthwise_paws_pqc_s0
+[19:27:11] finish depthwise_paws_pqc_s0 rc=0
+[19:27:11] start depthwise_paws_pqc_s1
+[19:41:38] finish depthwise_paws_pqc_s1 rc=0
+[19:41:38] start depthwise_paws_pqc_s2
+[19:51:04] finish depthwise_paws_pqc_s2 rc=0
+[19:51:04] start depthwise_paws_pqc_s3
+[19:57:52] finish depthwise_paws_pqc_s3 rc=0
+[19:57:52] start depthwise_paws_pqc_s4
+[20:04:40] finish depthwise_paws_pqc_s4 rc=0
+[20:04:40] start depthwise_paws_pqc_s5
+[20:11:22] finish depthwise_paws_pqc_s5 rc=0
+[20:11:22] start depthwise_paws_pqc_s6
+[20:21:26] finish depthwise_paws_pqc_s6 rc=0
+[20:21:26] start depthwise_paws_pqc_s7
+[20:34:20] finish depthwise_paws_pqc_s7 rc=0
+[20:34:20] start depthwise_paws_mlp_s0
+[20:34:36] finish depthwise_paws_mlp_s0 rc=0
+[20:34:36] start depthwise_paws_mlp_s1
+[20:34:50] finish depthwise_paws_mlp_s1 rc=0
+[20:34:50] start depthwise_paws_mlp_s2
+[20:35:05] finish depthwise_paws_mlp_s2 rc=0
+[20:35:05] start depthwise_paws_mlp_s3
+[20:35:19] finish depthwise_paws_mlp_s3 rc=0
+[20:35:19] start depthwise_paws_mlp_s4
+[20:35:34] finish depthwise_paws_mlp_s4 rc=0
+[20:35:34] start depthwise_paws_mlp_s5
+[20:35:49] finish depthwise_paws_mlp_s5 rc=0
+[20:35:49] start depthwise_paws_mlp_s6
+[20:36:04] finish depthwise_paws_mlp_s6 rc=0
+[20:36:04] start depthwise_paws_mlp_s7
+[20:36:18] finish depthwise_paws_mlp_s7 rc=0
+[20:36:18] start linear_mrpc_pqc_s0
+[20:40:38] finish linear_mrpc_pqc_s0 rc=0
+[20:40:38] start linear_mrpc_pqc_s1
+[20:44:57] finish linear_mrpc_pqc_s1 rc=0
+[20:44:57] start linear_mrpc_pqc_s2
+[20:47:56] finish linear_mrpc_pqc_s2 rc=0
+[20:47:56] start linear_mrpc_pqc_s3
+[20:53:34] finish linear_mrpc_pqc_s3 rc=0
+[20:53:34] start linear_mrpc_pqc_s4
+[20:56:55] finish linear_mrpc_pqc_s4 rc=0
+[20:56:55] start linear_mrpc_pqc_s5
+[21:00:30] finish linear_mrpc_pqc_s5 rc=0
+[21:00:30] start linear_mrpc_pqc_s6
+[21:04:44] finish linear_mrpc_pqc_s6 rc=0
+[21:04:44] start linear_mrpc_pqc_s7
+[21:07:41] finish linear_mrpc_pqc_s7 rc=0
+[21:07:41] start linear_mrpc_mlp_s0
+[21:08:02] finish linear_mrpc_mlp_s0 rc=0
+[21:08:02] start linear_mrpc_mlp_s1
+[21:08:16] finish linear_mrpc_mlp_s1 rc=0
+[21:08:16] start linear_mrpc_mlp_s2
+[21:08:30] finish linear_mrpc_mlp_s2 rc=0
+[21:08:30] start linear_mrpc_mlp_s3
+[21:08:43] finish linear_mrpc_mlp_s3 rc=0
+[21:08:43] start linear_mrpc_mlp_s4
+[21:08:57] finish linear_mrpc_mlp_s4 rc=0
+[21:08:57] start linear_mrpc_mlp_s5
+[21:09:11] finish linear_mrpc_mlp_s5 rc=0
+[21:09:11] start linear_mrpc_mlp_s6
+[21:09:25] finish linear_mrpc_mlp_s6 rc=0
+[21:09:25] start linear_mrpc_mlp_s7
+[21:09:39] finish linear_mrpc_mlp_s7 rc=0
+[21:09:39] start linear_paws_pqc_s0
+[21:17:24] finish linear_paws_pqc_s0 rc=0
+[21:17:24] start linear_paws_pqc_s1
+[21:26:13] finish linear_paws_pqc_s1 rc=0
+[21:26:13] start linear_paws_pqc_s2
+[21:30:40] finish linear_paws_pqc_s2 rc=0
+[21:30:40] start linear_paws_pqc_s3
+[21:45:34] finish linear_paws_pqc_s3 rc=0
+[21:45:34] start linear_paws_pqc_s4
+[22:00:23] finish linear_paws_pqc_s4 rc=0
+[22:00:23] start linear_paws_pqc_s5
+[22:14:39] finish linear_paws_pqc_s5 rc=0
+[22:14:40] start linear_paws_pqc_s6
+[22:23:40] finish linear_paws_pqc_s6 rc=0
+[22:23:40] start linear_paws_pqc_s7
+[22:33:08] finish linear_paws_pqc_s7 rc=0
+[22:33:08] start linear_paws_mlp_s0
+[22:33:23] finish linear_paws_mlp_s0 rc=0
+[22:33:23] start linear_paws_mlp_s1
+[22:33:37] finish linear_paws_mlp_s1 rc=0
+[22:33:37] start linear_paws_mlp_s2
+[22:33:50] finish linear_paws_mlp_s2 rc=0
+[22:33:50] start linear_paws_mlp_s3
+[22:34:04] finish linear_paws_mlp_s3 rc=0
+[22:34:04] start linear_paws_mlp_s4
+[22:34:17] finish linear_paws_mlp_s4 rc=0
+[22:34:17] start linear_paws_mlp_s5
+[22:34:30] finish linear_paws_mlp_s5 rc=0
+[22:34:30] start linear_paws_mlp_s6
+[22:34:43] finish linear_paws_mlp_s6 rc=0
+[22:34:43] start linear_paws_mlp_s7
+[22:34:56] finish linear_paws_mlp_s7 rc=0
+[22:34:56] DONE v5 sweep

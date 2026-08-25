@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: If you use this code or data, please cite the paper.
+title: >-
+  Two Methodological Pitfalls in Matched-Parameter Quantum-Classical
+  Benchmarking for Paraphrase Identification
+authors:
+  - family-names: Sammo
+    given-names: Nazmus Salehin
+    affiliation: Melbourne Institute of Technology
+  - family-names: Lura
+    given-names: Sariya Akhter
+    affiliation: Melbourne Institute of Technology
+  - family-names: Joy
+    given-names: Md Jannatul Rakib
+    affiliation: Swinburne University of Technology
+  - family-names: Nowrozy
+    given-names: Raza
+    affiliation: Melbourne Institute of Technology
+  - family-names: Bevinakoppa
+    given-names: Savitri
+    affiliation: Melbourne Institute of Technology
+year: 2026

@@ -1,0 +1,58 @@
+{
+  "config": {
+    "task": "mrpc",
+    "n_pairs": 100,
+    "seed": 0,
+    "n_qubits": 8,
+    "n_layers": 2,
+    "sbert_dim": 384,
+    "kernel_size": 32,
+    "stride": 32,
+    "reducer": "depthwise",
+    "head": "pqc",
+    "mlp_hidden": 3,
+    "sbert_model": "all-MiniLM-L6-v2",
+    "epochs": 5,
+    "lr": 0.01,
+    "batch_size": 32
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.8607589870621943,
+      "test_rho": 0.06535604547979014,
+      "test_acc": 0.6666666666666666
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.3985239854833882,
+      "test_rho": 0.008169505684973767,
+      "test_acc": 0.6666666666666666
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1395311945680924,
+      "test_rho": 0.016339011369947535,
+      "test_acc": 0.6666666666666666
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.0219699014457169,
+      "test_rho": 0.05718653979481637,
+      "test_acc": 0.6666666666666666
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.831807196267769,
+      "test_rho": 0.08169505684973767,
+      "test_acc": 0.6666666666666666
+    }
+  ],
+  "best_test_rho": 0.08169505684973767,
+  "classical_baselines": {
+    "cosine_sbert": 0.3022717103440294,
+    "neg_l2_sbert": 0.3022717103440294
+  },
+  "delta_rho_vs_best_classical": -0.22057665349429173,
+  "total_trainable_params": 229
+}

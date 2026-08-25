@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# regenerates from the encoder on first run
+data/sbert_cache/
+.cache/
+
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+nohup.out
+*.nohup
