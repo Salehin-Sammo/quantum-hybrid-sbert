@@ -1,0 +1,2 @@
+Analysis scripts write generated LaTeX tables here. The directory is kept so
+those writes succeed in a fresh clone; its contents are generated, not source.

@@ -14,3 +14,6 @@ data/sbert_cache/
 
 nohup.out
 *.nohup
+
+# generated tables, not source
+paper/*.tex
