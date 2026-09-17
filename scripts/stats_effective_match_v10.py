@@ -135,7 +135,7 @@ def main():
             f'${row["item_perm_p"]:.4f}$ & '
             f'${row["delta_auc"]:+.4f}$ (${row["paired_t_p_auc"]:.4f}$) & '
             f'${row["delta_ap"]:+.4f}$ (${row["paired_t_p_ap"]:.4f}$) & '
-            f'${row["mlp_h2_vs_h3_p"]:.4f}$ \\'
+            f'${row["mlp_h2_vs_h3_p"]:.4f}$ \\\\'
         )
     lines += [r"\bottomrule", r"\end{tabular}}", r"\end{table}"]
     open(os.path.join(ROOT, "paper/table_effective_match_v10.tex"), "w").write("\n".join(lines) + "\n")
