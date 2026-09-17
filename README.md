@@ -7,7 +7,7 @@ Asymmetry*.
 
 The study compares a 32-parameter data-reuploading PQC head against a matched
 31-parameter MLP head on MRPC, PAWS and QQP, using a frozen SBERT encoder and a
-197-parameter depthwise reducer. It reports 352 training runs across 42
+197-parameter depthwise reducer. It reports 376 training runs across 45
 experimental conditions. Every number in the paper comes from the JSON files in
 `results/`, and the scripts below recompute them.
 
