@@ -1,0 +1,442 @@
+{
+ "feature_source": "released real frozen depthwise reducer features (MRPC seed 0)",
+ "n_samples": 200,
+ "n_seeds": 8,
+ "L2": {
+  "per_seed": [
+   {
+    "seed": 0,
+    "mean_Z0": 0.8827361945559599,
+    "mean_Z0_ref": 0.8827361945559596,
+    "mean_Z0_first16": 0.887347621493023,
+    "f_at_zero": 0.9999999999999999,
+    "max_abs_grad_at_zero": 2.0988132200049785e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.23717167912826462,
+    "live_sd_grad_min": 1.0261176951627715e-06,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8538636363636364,
+    "uniform_shift_lstsq_rms_residual": 0.26448050490887,
+    "mean_readout_grad_norm": 0.5165705820819563,
+    "mean_readout_grad_max_abs": 0.23717167912826465,
+    "max_abs_grad_any": 0.9804562806152062,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.22797975204291623,
+    "fitted_shift_max": 1.5790929311375397,
+    "corr_fit_znorm2": 0.5934172499404882
+   },
+   {
+    "seed": 1,
+    "mean_Z0": 0.9083920634874297,
+    "mean_Z0_ref": 0.9083920634874293,
+    "mean_Z0_first16": 0.9121509662398173,
+    "f_at_zero": 1.0000000000000009,
+    "max_abs_grad_at_zero": 6.321060098012759e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.2612413384138749,
+    "live_sd_grad_min": 3.677639185500154e-07,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.853181818181818,
+    "uniform_shift_lstsq_rms_residual": 0.2580924974678168,
+    "mean_readout_grad_norm": 0.5023985063916986,
+    "mean_readout_grad_max_abs": 0.2612413384138751,
+    "max_abs_grad_any": 1.1016216225688005,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.23769416653339942,
+    "fitted_shift_max": 1.6691431282926004,
+    "corr_fit_znorm2": 0.5765601452179753
+   },
+   {
+    "seed": 2,
+    "mean_Z0": 0.9409513465069963,
+    "mean_Z0_ref": 0.9409513465069961,
+    "mean_Z0_first16": 0.9397787583934598,
+    "f_at_zero": 0.9999999999999996,
+    "max_abs_grad_at_zero": 5.901807514537847e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.19757655036563848,
+    "live_sd_grad_min": 1.7521679842137563e-08,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8320454545454545,
+    "uniform_shift_lstsq_rms_residual": 0.2829637354761947,
+    "mean_readout_grad_norm": 0.41973071326805866,
+    "mean_readout_grad_max_abs": 0.19757655036563843,
+    "max_abs_grad_any": 0.7988503947034232,
+    "n_live_sign_consistent_098": 11,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.24334528679294903,
+    "fitted_shift_max": 1.756169673339845,
+    "corr_fit_znorm2": 0.6205591626725736
+   },
+   {
+    "seed": 3,
+    "mean_Z0": 0.9406714431350792,
+    "mean_Z0_ref": 0.9406714431350791,
+    "mean_Z0_first16": 0.9491714340603948,
+    "f_at_zero": 1.0000000000000004,
+    "max_abs_grad_at_zero": 6.736556445414038e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.28061742426355835,
+    "live_sd_grad_min": 5.162890592052136e-10,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8393181818181819,
+    "uniform_shift_lstsq_rms_residual": 0.2732321475538826,
+    "mean_readout_grad_norm": 0.4109215964674626,
+    "mean_readout_grad_max_abs": 0.28061742426355835,
+    "max_abs_grad_any": 0.9903643813048472,
+    "n_live_sign_consistent_098": 11,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.25268667024522384,
+    "fitted_shift_max": 1.6340206205082295,
+    "corr_fit_znorm2": 0.5979437346318952
+   },
+   {
+    "seed": 4,
+    "mean_Z0": 0.9480139876587458,
+    "mean_Z0_ref": 0.9480139876587456,
+    "mean_Z0_first16": 0.9486472742318525,
+    "f_at_zero": 1.0000000000000004,
+    "max_abs_grad_at_zero": 9.401486556308826e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.22205404677182108,
+    "live_sd_grad_min": 4.651796898937499e-10,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8554545454545455,
+    "uniform_shift_lstsq_rms_residual": 0.2941120976713001,
+    "mean_readout_grad_norm": 0.3935606744804728,
+    "mean_readout_grad_max_abs": 0.22205404677182095,
+    "max_abs_grad_any": 0.8684147817371087,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.23088930289550502,
+    "fitted_shift_max": 1.7703239715339656,
+    "corr_fit_znorm2": 0.6450189498929565
+   },
+   {
+    "seed": 5,
+    "mean_Z0": 0.9118139821714445,
+    "mean_Z0_ref": 0.9118139821714439,
+    "mean_Z0_first16": 0.9126266346574075,
+    "f_at_zero": 0.9999999999999996,
+    "max_abs_grad_at_zero": 5.53021061306885e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.29678555785329097,
+    "live_sd_grad_min": 8.981174325087053e-09,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8522727272727273,
+    "uniform_shift_lstsq_rms_residual": 0.2836895737715971,
+    "mean_readout_grad_norm": 0.49437481973554537,
+    "mean_readout_grad_max_abs": 0.296785557853291,
+    "max_abs_grad_any": 1.338133326056348,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 6,
+    "near_inert_idx": [
+     9,
+     10,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.25714217939355016,
+    "fitted_shift_max": 1.6584313707803784,
+    "corr_fit_znorm2": 0.6371944329992758
+   },
+   {
+    "seed": 6,
+    "mean_Z0": 0.9239615913517492,
+    "mean_Z0_ref": 0.9239615913517488,
+    "mean_Z0_first16": 0.9265780190372688,
+    "f_at_zero": 1.0000000000000004,
+    "max_abs_grad_at_zero": 5.123769994469548e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.2270965861332575,
+    "live_sd_grad_min": 1.9647541975037982e-07,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8534090909090909,
+    "uniform_shift_lstsq_rms_residual": 0.2679924486365805,
+    "mean_readout_grad_norm": 0.4629000679273711,
+    "mean_readout_grad_max_abs": 0.22709658613325753,
+    "max_abs_grad_any": 0.9120192709031737,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 6,
+    "near_inert_idx": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.23646532332561668,
+    "fitted_shift_max": 1.778843006378448,
+    "corr_fit_znorm2": 0.5910629050116343
+   },
+   {
+    "seed": 7,
+    "mean_Z0": 0.9202638238102481,
+    "mean_Z0_ref": 0.9202638238102477,
+    "mean_Z0_first16": 0.9230076443544798,
+    "f_at_zero": 1.0000000000000004,
+    "max_abs_grad_at_zero": 4.4719050575824304e-17,
+    "n_inert": 10,
+    "inert_idx": [
+     8,
+     16,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "live_mean_grad_max_abs": 0.3178621483178388,
+    "live_sd_grad_min": 8.359147244706097e-08,
+    "live_sign_consistency_max": 1.0,
+    "live_sign_consistency_mean": 0.8415909090909092,
+    "uniform_shift_lstsq_rms_residual": 0.2679957122897661,
+    "mean_readout_grad_norm": 0.4934730047646871,
+    "mean_readout_grad_max_abs": 0.3178621483178387,
+    "max_abs_grad_any": 1.3260197731747654,
+    "n_live_sign_consistent_098": 12,
+    "n_live": 22,
+    "n_near_inert_1e-3": 7,
+    "near_inert_idx": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "fitted_shift_min": 0.2579542972415587,
+    "fitted_shift_max": 1.649960543196012,
+    "corr_fit_znorm2": 0.5970852907533984
+   }
+  ],
+  "summary": {
+   "mean_Z0": [
+    0.9221005540847066,
+    0.8827361945559599,
+    0.9480139876587458
+   ],
+   "mean_Z0_first16": [
+    0.9249135440584629,
+    0.887347621493023,
+    0.9491714340603948
+   ],
+   "live_sign_consistency_max": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "uniform_shift_lstsq_rms_residual": [
+    0.274069839722001,
+    0.2580924974678168,
+    0.2941120976713001
+   ],
+   "mean_readout_grad_norm": [
+    0.4617412456396566,
+    0.3935606744804728,
+    0.5165705820819563
+   ],
+   "mean_readout_grad_max_abs": [
+    0.2550506664059431,
+    0.19757655036563843,
+    0.3178621483178387
+   ],
+   "max_abs_grad_any": [
+    1.039484978882959,
+    0.7988503947034232,
+    1.338133326056348
+   ],
+   "live_mean_grad_max_abs": [
+    0.2550506664059431,
+    0.19757655036563848,
+    0.3178621483178388
+   ],
+   "n_live_sign_consistent_098": [
+    11.75,
+    11.0,
+    12.0
+   ],
+   "n_near_inert_1e-3": [
+    6.75,
+    6.0,
+    7.0
+   ],
+   "fitted_shift_min": [
+    0.2430196223088399,
+    0.22797975204291623,
+    0.2579542972415587
+   ],
+   "fitted_shift_max": [
+    1.6869981556458773,
+    1.5790929311375397,
+    1.778843006378448
+   ],
+   "corr_fit_znorm2": [
+    0.6073552338900247,
+    0.5765601452179753,
+    0.6450189498929565
+   ],
+   "max_abs_grad_at_zero": 9.401486556308826e-17,
+   "f_at_zero_min": 0.9999999999999996,
+   "n_inert": [
+    10
+   ],
+   "max_abs_dev_from_ref": 5.551115123125783e-16
+  }
+ },
+ "inert_check": {
+  "L1": {
+   "n_params": 16,
+   "n_inert": 9
+  },
+  "L4": {
+   "n_params": 64,
+   "n_inert": 10
+  }
+ }
+}

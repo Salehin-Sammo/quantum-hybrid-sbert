@@ -52,10 +52,21 @@ Then, from the repository root:
 | `python scripts/rescore_qqp_matched.py` | The like-for-like QQP comparison on a matched test subsample |
 | `python scripts/readout_offset_v7.py` | Initialisation-time readout probe |
 | `python scripts/noise_recalibrated_v7.py` | Depolarizing-noise sweep with re-fitted threshold |
+| `python scripts/stats_paired_v9.py` | Paired seed-level tests and the 15-cell Holm family |
+| `python scripts/stats_example_level_v9.py` | Item-clustered and hierarchical statistics for the head comparisons |
+| `python scripts/stats_example_level_mech_v9.py` | Item-level calibration-mechanism contrasts |
+| `python scripts/metrics_prc_v9.py` | Precision-recall area and class-wise precision and recall |
+| `python scripts/grad_analysis_v9.py` | Jacobian and uniform-shift analysis on the released MRPC features |
+| `python scripts/hw_readout_probe.py --backend aer --n-features 16` | Exact Qiskit Aer readout probe on the same released features |
 
 These read the stored results and need no GPU. Re-running the experiments
 themselves uses the `scripts/run_*.sh` drivers and takes considerably longer;
 the 16-qubit runs are roughly three minutes per epoch on CPU.
+
+`results/mrpc_depthwise_q8_s0_features.npy` contains the 200 reduced feature
+vectors used by the gradient and Aer probes. Its companion JSON records the
+dataset selection, checkpoint, encoder and SHA-256 digest. The probe scripts
+fail if this snapshot is absent; they do not substitute synthetic features.
 
 ## Pre-registration
 

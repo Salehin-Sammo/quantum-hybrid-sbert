@@ -1,13 +1,16 @@
 {
   "mode": "aer-noisy",
   "shots": 4096,
+  "feature_source": "results/mrpc_depthwise_q8_s0_features.npy",
+  "n_features": 16,
+  "simulator_seed": 0,
   "exact": {
     "ru": 0.924913544058463,
     "sel": -0.04282235867471677
   },
   "measured": {
-    "ru": 0.7886581420898438,
-    "sel": -0.022975921630859375
+    "ru": 0.7894134521484375,
+    "sel": -0.023113250732421875
   },
   "backend": "aer_simulator"
 }

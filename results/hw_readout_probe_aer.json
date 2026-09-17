@@ -1,7 +1,9 @@
 {
   "mode": "exact",
+  "feature_source": "results/mrpc_depthwise_q8_s0_features.npy",
+  "n_features": 16,
   "exact": {
-    "ru": 0.9159636366831184,
-    "sel": -0.00865285805953806
+    "ru": 0.924913544058463,
+    "sel": -0.04282235867471677
   }
 }

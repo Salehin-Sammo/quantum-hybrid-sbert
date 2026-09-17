@@ -1,0 +1,12 @@
+{
+  "source_dataset": "nyu-mll/glue:mrpc validation",
+  "selection": "random.Random(0).shuffle(indices), first 200",
+  "reducer_checkpoint": "results/v4/checkpoints/reducer_mrpc_depthwise_q8_s0.pt",
+  "sbert_model": "all-MiniLM-L6-v2",
+  "shape": [
+    200,
+    8
+  ],
+  "dtype": "float64",
+  "sha256": "f0702586dc1d1960d4328f50449760aecdfdc8fbf0c3634dc96f86ddc208f2e8"
+}

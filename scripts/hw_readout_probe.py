@@ -32,29 +32,26 @@ sys.path.insert(0, str(ROOT / "src"))
 
 N_QUBITS, N_LAYERS_RU, N_LAYERS_SEL = 8, 2, 1
 N_SEEDS, N_FEATURES, SHOTS = 8, 16, 4096
+SIMULATOR_SEED = 0
 
 
 def features(n: int) -> np.ndarray:
-    """Real frozen depthwise features (MRPC seed-0 checkpoint), same source as
-    the PennyLane probe. Falls back to the tanh output range if absent."""
-    ckpt = ROOT / "results/v4/checkpoints/reducer_mrpc_depthwise_q8_s0.pt"
-    try:
-        from hybrid_reducer import DepthwiseSBERTReducer
-        from hybrid_sbert import SBERTFeatures
-        from datasets_qec import load_dataset_by_name
-        r = DepthwiseSBERTReducer(sbert_dim=384, kernel_size=32, stride=32,
-                                  n_qubits=N_QUBITS).double()
-        r.load_state_dict(torch.load(ckpt, weights_only=True)); r.eval()
-        pairs = load_dataset_by_name("mrpc", n_pairs=n, seed=0, split="validation")
-        sb = SBERTFeatures(model_name="all-MiniLM-L6-v2")
-        a, b, _ = sb.encode_pairs(pairs)
-        with torch.no_grad():
-            z = r(torch.from_numpy(a.astype(np.float64)),
-                  torch.from_numpy(b.astype(np.float64)))
-        return z.numpy()[:n]
-    except Exception as e:
-        print(f"  [warn] real features unavailable ({type(e).__name__}); using uniform[-1,1]")
-        return np.random.default_rng(0).uniform(-1, 1, size=(n, N_QUBITS))
+    """Released real frozen depthwise features used by the paper's probe.
+
+    The previous fallback to synthetic uniform features made an apparently
+    successful run analyse a different experiment.  Fail loudly instead.
+    """
+    path = ROOT / "results/mrpc_depthwise_q8_s0_features.npy"
+    if not path.exists():
+        raise FileNotFoundError(
+            f"missing released feature snapshot: {path.relative_to(ROOT)}"
+        )
+    z = np.load(path)
+    if z.shape != (200, N_QUBITS):
+        raise ValueError(f"unexpected feature shape {z.shape}, expected (200, {N_QUBITS})")
+    if n > len(z):
+        raise ValueError(f"requested {n} features; released snapshot contains {len(z)}")
+    return z[:n]
 
 
 def reuploading(x: np.ndarray, p: np.ndarray) -> QuantumCircuit:
@@ -134,7 +131,9 @@ def main():
 
     if args.backend == "aer":
         print("Aer exact requested; statevector result above is the answer.")
-        out = {"mode": "exact", "exact": {k: float(np.mean(v)) for k, v in exact.items()}}
+        out = {"mode": "exact", "feature_source": "results/mrpc_depthwise_q8_s0_features.npy",
+               "n_features": args.n_features,
+               "exact": {k: float(np.mean(v)) for k, v in exact.items()}}
     else:
         meas = [qc.copy() for qc in circuits]
         for qc in meas:
@@ -149,7 +148,7 @@ def main():
             nm.add_all_qubit_readout_error(ReadoutError([[0.985, 0.015], [0.03, 0.97]]))
             be = AerSimulator(noise_model=nm)
             tq = transpile(meas, be, optimization_level=1)
-            res = be.run(tq, shots=args.shots).result()
+            res = be.run(tq, shots=args.shots, seed_simulator=SIMULATOR_SEED).result()
             counts = [res.get_counts(i) for i in range(len(meas))]
         else:
             from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2
@@ -171,6 +170,9 @@ def main():
             print(f"  {kind:<4} mean<Z0> = {v.mean():+.4f}   std = {v.std():.4f}"
                   f"   shift vs exact = {v.mean()-e.mean():+.4f}")
         out = {"mode": args.backend, "shots": args.shots,
+               "feature_source": "results/mrpc_depthwise_q8_s0_features.npy",
+               "n_features": args.n_features,
+               "simulator_seed": SIMULATOR_SEED if args.backend == "aer-noisy" else None,
                "exact": {k: float(np.mean(v)) for k, v in exact.items()},
                "measured": {k: float(np.mean(v)) for k, v in got.items()},
                "backend": getattr(be, "name", str(be))}

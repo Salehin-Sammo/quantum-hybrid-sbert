@@ -1,0 +1,344 @@
+[
+ {
+  "version": "v4",
+  "task": "mrpc",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.03952041328561112,
+  "paired_t_p": 0.008363940337105786,
+  "item_boot_ci95": [
+   0.006176175654869547,
+   0.07319455188750794
+  ],
+  "hier_boot_ci95": [
+   -0.0073417150622565475,
+   0.08760172099679096
+  ],
+  "perm_p": 0.06229377062293771,
+  "perm_p_holm": 0.3114688531146885
+ },
+ {
+  "version": "v4",
+  "task": "mrpc",
+  "reducer": "linear",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.01951600493426798,
+  "paired_t_p": 0.202187646078032,
+  "item_boot_ci95": [
+   -0.017488284009361553,
+   0.05642106949786712
+  ],
+  "hier_boot_ci95": [
+   -0.030871365421527793,
+   0.07141250712307967
+  ],
+  "perm_p": 0.41035896410358963,
+  "perm_p_holm": 1.0
+ },
+ {
+  "version": "v4",
+  "task": "paws",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 8000,
+  "mean_test_size": 7800.0,
+  "mean_pairwise_overlap": 0.9749130036630037,
+  "delta_macro_f1": 0.038628397310565374,
+  "paired_t_p": 0.0006350254647779256,
+  "item_boot_ci95": [
+   0.033377328407066385,
+   0.044042803108315084
+  ],
+  "hier_boot_ci95": [
+   0.025441661878952266,
+   0.05314191180797004
+  ],
+  "perm_p": 9.999000099990002e-05,
+  "perm_p_holm": 0.0011998800119988001
+ },
+ {
+  "version": "v4",
+  "task": "paws",
+  "reducer": "linear",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 8000,
+  "mean_test_size": 7800.0,
+  "mean_pairwise_overlap": 0.9749130036630037,
+  "delta_macro_f1": 0.06453026662816559,
+  "paired_t_p": 0.01411506388531196,
+  "item_boot_ci95": [
+   0.0594504659964218,
+   0.06970723198352771
+  ],
+  "hier_boot_ci95": [
+   0.03505235120420253,
+   0.10608430887664833
+  ],
+  "perm_p": 9.999000099990002e-05,
+  "perm_p_holm": 0.0011998800119988001
+ },
+ {
+  "version": "v4",
+  "task": "qqp",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 40430,
+  "mean_test_size": 40230.0,
+  "mean_pairwise_overlap": 0.9950427896736623,
+  "delta_macro_f1": 0.08697319935697215,
+  "paired_t_p": 0.0001829040105971733,
+  "item_boot_ci95": [
+   0.08461013439596779,
+   0.08928048264376295
+  ],
+  "hier_boot_ci95": [
+   0.06356590412611679,
+   0.10831073392456526
+  ],
+  "perm_p": 9.999000099990002e-05,
+  "perm_p_holm": 0.0011998800119988001
+ },
+ {
+  "version": "v5",
+  "task": "mrpc",
+  "reducer": "depthwise",
+  "n_qubits": 4,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.03632568028279829,
+  "paired_t_p": 0.03988627058830406,
+  "item_boot_ci95": [
+   0.001793352847074624,
+   0.07043860790097763
+  ],
+  "hier_boot_ci95": [
+   -0.012815821233750075,
+   0.08836380290753387
+  ],
+  "perm_p": 0.049595040495950406,
+  "perm_p_holm": 0.29757024297570245
+ },
+ {
+  "version": "v5",
+  "task": "mrpc",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.014325501248094459,
+  "paired_t_p": 0.25770402867348874,
+  "item_boot_ci95": [
+   -0.01714548100341781,
+   0.045580213367807175
+  ],
+  "hier_boot_ci95": [
+   -0.03148526684675985,
+   0.059813235677695926
+  ],
+  "perm_p": 0.37446255374462556,
+  "perm_p_holm": 1.0
+ },
+ {
+  "version": "v5",
+  "task": "mrpc",
+  "reducer": "depthwise",
+  "n_qubits": 12,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": -0.01459017477178369,
+  "paired_t_p": 0.4393739084238264,
+  "item_boot_ci95": [
+   -0.04080681419579052,
+   0.011565563400782897
+  ],
+  "hier_boot_ci95": [
+   -0.06283288871440666,
+   0.03513723350980311
+  ],
+  "perm_p": 0.28147185281471854,
+  "perm_p_holm": 1.0
+ },
+ {
+  "version": "v5",
+  "task": "mrpc",
+  "reducer": "linear",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.009947365677095782,
+  "paired_t_p": 0.355234728672742,
+  "item_boot_ci95": [
+   -0.02242667385070291,
+   0.04244598272198135
+  ],
+  "hier_boot_ci95": [
+   -0.03286383522808931,
+   0.05477699832253644
+  ],
+  "perm_p": 0.6288371162883711,
+  "perm_p_holm": 1.0
+ },
+ {
+  "version": "v5",
+  "task": "paws",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 16,
+  "n_items_pool": 8000,
+  "mean_test_size": 7800.0,
+  "mean_pairwise_overlap": 0.9749871794871794,
+  "delta_macro_f1": 0.007332937337890474,
+  "paired_t_p": 0.02767623755453818,
+  "item_boot_ci95": [
+   0.0035766004892036044,
+   0.011121359902425947
+  ],
+  "hier_boot_ci95": [
+   -0.00015321558702689864,
+   0.01521232874239312
+  ],
+  "perm_p": 0.00029997000299970003,
+  "perm_p_holm": 0.0020997900209979003
+ },
+ {
+  "version": "v5",
+  "task": "paws",
+  "reducer": "linear",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 8000,
+  "mean_test_size": 7800.0,
+  "mean_pairwise_overlap": 0.9749130036630037,
+  "delta_macro_f1": 0.0590949327153579,
+  "paired_t_p": 0.020183285313092145,
+  "item_boot_ci95": [
+   0.054148278780930204,
+   0.06413102190294014
+  ],
+  "hier_boot_ci95": [
+   0.033601478780685076,
+   0.10119377227298913
+  ],
+  "perm_p": 9.999000099990002e-05,
+  "perm_p_holm": 0.0011998800119988001
+ },
+ {
+  "version": "v5",
+  "task": "qqp",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "primary",
+  "n": 8,
+  "n_items_pool": 40430,
+  "mean_test_size": 40230.0,
+  "mean_pairwise_overlap": 0.9950427896736623,
+  "delta_macro_f1": 0.03423119841242371,
+  "paired_t_p": 0.0005722267066495938,
+  "item_boot_ci95": [
+   0.032274294493725736,
+   0.03619359095728616
+  ],
+  "hier_boot_ci95": [
+   0.024304467541608823,
+   0.046026694836105816
+  ],
+  "perm_p": 9.999000099990002e-05,
+  "perm_p_holm": 0.0011998800119988001
+ },
+ {
+  "version": "v5",
+  "task": "paws",
+  "reducer": "depthwise",
+  "n_qubits": 8,
+  "family": "pre-specified-8-seed",
+  "n": 8,
+  "n_items_pool": 8000,
+  "mean_test_size": 7800.0,
+  "mean_pairwise_overlap": 0.9749130036630037,
+  "delta_macro_f1": 0.009299825654058395,
+  "paired_t_p": 0.06518878219035543,
+  "item_boot_ci95": [
+   0.004295869255544684,
+   0.014355929681502
+  ],
+  "hier_boot_ci95": [
+   -0.0004990629524818117,
+   0.020455024742819444
+  ],
+  "perm_p": 0.0006999300069993001
+ },
+ {
+  "version": "v8",
+  "task": "mrpc",
+  "reducer": "depthwise",
+  "n_qubits": 16,
+  "family": "post hoc q=16",
+  "n": 8,
+  "n_items_pool": 406,
+  "mean_test_size": 208.0,
+  "mean_pairwise_overlap": 0.5169986263736263,
+  "delta_macro_f1": 0.019819299430367546,
+  "paired_t_p": 0.1576897103849115,
+  "item_boot_ci95": [
+   -0.009619514567661405,
+   0.048427989104867585
+  ],
+  "hier_boot_ci95": [
+   -0.0259034465741512,
+   0.06431220428058669
+  ],
+  "perm_p": 0.21547845215478453
+ },
+ {
+  "version": "v8",
+  "task": "qqp",
+  "reducer": "depthwise",
+  "n_qubits": 16,
+  "family": "post hoc q=16",
+  "n": 8,
+  "n_items_pool": 22929,
+  "mean_test_size": 4000.0,
+  "mean_pairwise_overlap": 0.09779464285714289,
+  "delta_macro_f1": 0.019674072878612933,
+  "paired_t_p": 0.0009068029509741522,
+  "item_boot_ci95": [
+   0.01468735360274552,
+   0.024572826286636377
+  ],
+  "hier_boot_ci95": [
+   0.009975353204300812,
+   0.0290731851153785
+  ],
+  "perm_p": 9.999000099990002e-05
+ }
+]
