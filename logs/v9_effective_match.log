@@ -1,0 +1,26 @@
+[17:05:38] v9 effective-match control starting
+[17:05:38] skip mrpc_effmatch_h2_s0 (already complete)
+[17:05:38] skip mrpc_effmatch_h2_s1 (already complete)
+[17:05:38] skip mrpc_effmatch_h2_s2 (already complete)
+[17:05:38] skip mrpc_effmatch_h2_s3 (already complete)
+[17:05:38] skip mrpc_effmatch_h2_s4 (already complete)
+[17:05:38] skip mrpc_effmatch_h2_s5 (already complete)
+[17:05:52] done mrpc_effmatch_h2_s6 rc=0
+[17:05:52] done mrpc_effmatch_h2_s7 rc=0
+[17:05:54] done paws_effmatch_h2_s1 rc=0
+[17:05:54] done paws_effmatch_h2_s0 rc=0
+[17:05:54] done paws_effmatch_h2_s3 rc=0
+[17:05:54] done paws_effmatch_h2_s2 rc=0
+[17:06:07] done paws_effmatch_h2_s5 rc=0
+[17:06:08] done paws_effmatch_h2_s4 rc=0
+[17:06:08] done paws_effmatch_h2_s6 rc=0
+[17:06:09] done paws_effmatch_h2_s7 rc=0
+[17:06:17] done qqp_effmatch_h2_s0 rc=0
+[17:06:18] done qqp_effmatch_h2_s1 rc=0
+[17:06:29] done qqp_effmatch_h2_s2 rc=0
+[17:06:30] done qqp_effmatch_h2_s3 rc=0
+[17:06:30] done qqp_effmatch_h2_s4 rc=0
+[17:06:31] done qqp_effmatch_h2_s5 rc=0
+[17:06:38] done qqp_effmatch_h2_s6 rc=0
+[17:06:38] done qqp_effmatch_h2_s7 rc=0
+[17:06:38] V9 EFFECTIVE-MATCH COMPLETE

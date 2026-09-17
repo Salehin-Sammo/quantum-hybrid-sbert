@@ -30,6 +30,7 @@ Protocol versions in `results/`:
 | `v5` | Adds the two-parameter affine calibration. |
 | `v7` | Mechanism experiments: depth sweep, second ansatz, initialisation scale. |
 | `v8` | Bias-only ablation and the 16-qubit mid-capacity control. |
+| `v9` | Reviewer-requested approximately effective-parameter-matched MLP control. |
 
 ## Reproducing the numbers
 
@@ -58,6 +59,7 @@ Then, from the repository root:
 | `python scripts/metrics_prc_v9.py` | Precision-recall area and class-wise precision and recall |
 | `python scripts/grad_analysis_v9.py` | Jacobian and uniform-shift analysis on the released MRPC features |
 | `python scripts/hw_readout_probe.py --backend aer --n-features 16` | Exact Qiskit Aer readout probe on the same released features |
+| `python scripts/stats_effective_match_v10.py` | The three-task 24-versus-23 effective-parameter control |
 
 These read the stored results and need no GPU. Re-running the experiments
 themselves uses the `scripts/run_*.sh` drivers and takes considerably longer;
